@@ -25,7 +25,8 @@ require("nvim-tree").setup({
   }
 })
 
-vim.cmd('colorscheme github_dark_tritanopia')
+-- vim.cmd('colorscheme github_dark_tritanopia')
+vim.cmd("colorscheme darkplus")
 
 require('lspconfig/quick_lint_js').setup {}
 require'lspconfig'.tsserver.setup {}
