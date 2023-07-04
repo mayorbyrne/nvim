@@ -11,7 +11,8 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'github/copilot.vim'
-  use "lunarvim/darkplus.nvim"
+  -- use "lunarvim/darkplus.nvim"
+  use { "catppuccin/nvim", as = "catppuccin" }
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'

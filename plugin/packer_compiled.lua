@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  catppuccin = {
+    loaded = true,
+    path = "/home/kevin/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/kevin/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -103,11 +108,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kevin/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
-  },
-  ["darkplus.nvim"] = {
-    loaded = true,
-    path = "/home/kevin/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
-    url = "https://github.com/lunarvim/darkplus.nvim"
   },
   ["github-nvim-theme"] = {
     loaded = true,

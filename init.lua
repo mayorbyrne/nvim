@@ -30,8 +30,20 @@ require("nvim-tree").setup({
   }
 })
 
--- vim.cmd('colorscheme github_dark_tritanopia')
-vim.cmd("colorscheme darkplus")
+require("catppuccin").setup({
+  flavour = "mocha", -- latte, frappe, macchiato, mocha
+  transparent_background = false,
+  term_colors = true,
+  color_overrides = {
+    mocha = {
+      base = "#000000",
+      mantle = "#000000",
+      crust = "#000000",
+    },
+  },
+})
+
+vim.cmd.colorscheme "catppuccin"
 
 require('lspconfig/quick_lint_js').setup {}
 require'lspconfig'.tsserver.setup {}
@@ -116,3 +128,5 @@ local opts = { noremap = true, silent = true }
   }
 
   require'lspconfig'.svelte.setup{}
+  vim.api.nvim_set_keymap('n', '<Leader>e',  [[<Cmd>lua vim.diagnostic.open_float(0, {scope="line"})<CR>]], { noremap = true, silent = true })
+
