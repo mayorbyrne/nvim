@@ -114,3 +114,5 @@ local opts = { noremap = true, silent = true }
   require('lspconfig')['tsserver'].setup {
     capabilities = capabilities
   }
+
+  require'lspconfig'.svelte.setup{}

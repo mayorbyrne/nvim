@@ -155,6 +155,11 @@ _G.packer_plugins = {
     path = "/home/kevin/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
   },
+  ["vim-svelte-plugin"] = {
+    loaded = true,
+    path = "/home/kevin/.local/share/nvim/site/pack/packer/start/vim-svelte-plugin",
+    url = "https://github.com/leafOfTree/vim-svelte-plugin"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/kevin/.local/share/nvim/site/pack/packer/start/vim-vsnip",

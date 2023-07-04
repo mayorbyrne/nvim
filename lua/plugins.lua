@@ -22,4 +22,5 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip'
   use 'prettier/vim-prettier'
   use 'tomtom/tcomment_vim'
+  use 'leafOfTree/vim-svelte-plugin'
 end)
